@@ -29,8 +29,12 @@ p {
 }
 
 hr {
-  height: 2%;
-  margin-top: 2%;
+  height: 5;
+  margin-top:0;
+  margin-bottom: 0;
+  background-color: black;
+  border-color: black;
+  width: 100%;
 }
 
 a{
@@ -45,8 +49,8 @@ a:hover {
 
 table {
   width: 100%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 li {
@@ -69,14 +73,6 @@ li {
   margin-right: 25%;
 }
 
-
-.profile {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-
-
 .title
 {
   text-align: center;
@@ -93,12 +89,9 @@ li {
   margin-bottom: 2%;
 }
 
-
 .summary {
   text-align: left;
 }
-
-
 
 .profile
 {
@@ -156,14 +149,42 @@ html {
 }
 
 .footer {
-  margin-top: 10px;
+  margin-top: 0px;
   padding: 10px 10px 10px 10px;
-    background-color: black;
-  /* height: 100px; */
+  background-color: black;
   text-align: center;
 }
 
 .footer p{
   font-size: 12px;
   line-height: 1.1;
+}
+
+.profile {
+  background-color: blue;
+}
+
+.technical {
+  background-color: red;
+}
+
+.work {
+  background-color: green;
+}
+
+.education {
+  background-color: purple;
+}
+
+.otherSkills {
+  background-color: orange;
+}
+
+.section {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 2%;
+  padding-top: 2%;
 }
