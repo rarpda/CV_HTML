@@ -2,6 +2,7 @@ body {
   background-color: #52514f;
   margin: 0;
   color: white;
+  font-family: "roboto";
 }
 
 h1 {
@@ -13,6 +14,8 @@ h2 {
   /* font-size: 2.5rem; */
   font-weight: normal;
   padding-bottom: 10px;
+  font-size: 3.625rem;
+  text-align: center;
 }
 
 h3 {
@@ -42,16 +45,24 @@ a:hover {
 
 table {
   width: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 li {
   line-height: 1.5;
 }
 
+.cover {
+  /* background-color: red; */
+}
+
+.cover h2 {
+}
+
 .date {
   text-align: right;
+  width: 25%;
 }
 
 .links {
@@ -64,12 +75,17 @@ li {
   margin-right: 25%;
 }
 
-.photo{
-  width: 12%;
-  border-radius: 100%;
-  float: left;
-  margin-right: 5%;
-  margin-left: 1%;
+
+.profile {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+.title
+{
+  text-align: center;
 }
 
 
@@ -84,11 +100,17 @@ li {
 }
 
 
+.summary {
+  text-align: left;
+}
+
+
+
 .profile
 {
-  margin-bottom: 10%;
-  padding-top: 2%;
+  margin-bottom: 3%;
 }
+
 .header {
   font-size: 30px;
   background-color: black;
@@ -97,13 +119,57 @@ li {
 }
 
 
-h2.profile{
-  margin-bottom: 0px;
-  color: red;
-}
-
 .otherSkills {
   margin-left: 3%;
   text-align: center;
   line-height: 1.5;
+}
+
+
+.photo{
+  width: 12%;
+  border-radius: 100%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section {
+  height: 25%;
+}
+
+
+.profile p {
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  line-height: 1.2;
+}
+
+
+.otherSkills {
+  margin-bottom: 10%;
+}
+
+.cover .name {
+  font-size: 30px;
+}
+
+.footer {
+  margin-top: 10px;
+  padding: 10px 10px 10px 10px;
+    background-color: black;
+  /* height: 100px; */
+  text-align: center;
+}
+
+.footer p{
+  font-size: 12px;
+  line-height: 1.1;
 }
