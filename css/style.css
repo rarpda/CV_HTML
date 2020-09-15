@@ -46,7 +46,7 @@ a {
 }
 
 a:hover {
-  color: black;
+  color: #ea0599;
 }
 
 table {
@@ -109,7 +109,7 @@ li {
 
 .header {
   font-size: 30px;
-  background-color: black;
+  background-color: #222831;
   color: white;
   padding: 10px 10px 30px 10px;
 }
@@ -177,7 +177,7 @@ html {
 }
 
 .work {
-  background-color: #e43f5a;
+  background-color: #59405c;
 }
 
 .education {
@@ -197,16 +197,13 @@ html {
   padding-top: 2%;
 }
 
-.cover {
-  height: 700px;
-  vertical-align: middle;
-}
-
 
 .cover h2 {
   margin-top: 10%;
 }
 
-.cover .section {
-  background-image: image("milkyWay1.jpg");
+.cover.section {
+  height: 700px;
+  vertical-align: middle;
+  background-image: url("../milkyWay1.jpg");
 }
