@@ -7,7 +7,6 @@ body {
 
 h1 {
   font-family: "Merriweather";
-
   font-size: 4.625rem;
   margin: 50px auto 0 auto;
   text-align: center;
@@ -62,6 +61,9 @@ li {
   line-height: 1.5;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 .date {
   text-align: right;
@@ -82,7 +84,6 @@ li {
 {
   text-align: center;
 }
-
 
 .icons {
   align-items: center;
@@ -110,12 +111,19 @@ li {
 }
 
 
-.header {
-  font-size: 30px;
+nav {
+  text-align: right;
+  height: 50px;
+  font-size: 18px;
   background-color: #222831;
   color: white;
-  padding: 10px 10px 30px 10px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
+
+
+
 
 .otherSkills {
   margin-left: 3%;
@@ -138,15 +146,9 @@ li {
   margin-bottom: 1%;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .section {
   height: 25%;
 }
-
-
 
 .profile p {
   text-align: center;
@@ -204,7 +206,6 @@ html {
   padding-bottom: 2%;
   padding-top: 2%;
 }
-
 
 .cover h2 {
   margin-top: 10%;
