@@ -1,35 +1,30 @@
+/*Component selectors*/
 body {
   background-color: #52514f;
   margin: 0;
   color: white;
-  font-family: "Bitter";
-  font-size: 1.2vw;
+  font-family: "Bitter", sans-serif;
 }
 
-h1 {
-  font-family: "Merriweather";
-  font-size: 3vw;
+h1, h2, h3, h4 {
   text-align: center;
+  font-family: "Merriweather";
+  font-weight: normal;
 }
 
 h2 {
-  font-family: "Merriweather";
-  font-weight: normal;
-  padding-bottom: 10px;
-  font-size: 2.5vw;
-  text-align: center;
-  margin-bottom: 0;
+  font-size: calc(1.5rem + 2vw);
 }
 
 h3 {
-  font-family: "Merriweather";
-  text-align: center;
-  font-size: 2vw;
+  font-size: calc(1.5rem + 1vw);
 }
 
 p {
   line-height: 1;
   margin: auto 10%;
+  font-size: calc(1 rem + 1vw);
+
 }
 
 hr {
@@ -61,10 +56,7 @@ li {
   line-height: 1.5;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
+/* Class selectors*/
 .date {
   text-align: right;
   width: 40%;
@@ -81,8 +73,8 @@ tr {
 
 .TechSkills {
   display: block;
-  margin-left: 22%;
-  margin-right: 22%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .title
@@ -114,21 +106,6 @@ tr {
   height: auto;
   display: inline;
 }
-
-
-nav {
-  text-align: right;
-  height: 50px;
-  font-size: 1vw;
-  background-color: #222831;
-  color: white;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-
-
-
 
 .otherSkills {
   margin-left: 3%;
@@ -171,18 +148,6 @@ nav {
   font-size: 5vw;
 }
 
-.footer {
-  margin-top: 0;
-  padding: 10px 10px 10px 10px;
-  background-color: black;
-  text-align: center;
-}
-
-.footer p{
-  font-size: 12px;
-  line-height: 1.1;
-}
-
 .profile {
   background-color: #1f4068;
 }
@@ -212,12 +177,12 @@ nav {
   padding-top: 2%;
 }
 
-.cover h2 {
-   margin-top: 10%;
-}
-
 .cover.section {
-  height: 500px;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 600px;
   background-image: url("../milkyWay1.jpg");
+  background-size: cover;
+  background-position: center;
 }

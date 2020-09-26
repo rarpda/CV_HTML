@@ -1,0 +1,27 @@
+nav {
+  text-align: right;
+  height: 50px;
+  font-size: 1vw;
+  background-color: #222831;
+  color: white;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+
+footer {
+  margin-top: 0;
+  padding: 10px 10px 10px 10px;
+  background-color: black;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1vw;
+  line-height: 1.1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
