@@ -18,10 +18,20 @@
 }
 
 .logos {
-  max-width: 20%;
+  height: 100px;
   background: white;
+  margin-bottom: 10px;
+  border-radius: 2%;
 }
 
+.TechSkills h3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.section.technical h3 {
+  margin-top: 0;
+}
 
 .project {
   height: 500px;
