@@ -1,0 +1,35 @@
+.circle {
+  border-radius: 100%;
+  background: white;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+
+.logo {
+  height: 60%;
+  width: 60%;
+  margin: auto;
+  max-height: : 60%;
+  display: block;
+}
+
+.logos {
+  max-width: 20%;
+  background: white;
+}
+
+
+.project {
+  height: 500px;
+  width: 500px;
+  background-color: red;
+  display: flex;
+}
+
+.project h3 {
+  text-align: center;
+}

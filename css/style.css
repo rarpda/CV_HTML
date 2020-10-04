@@ -73,6 +73,18 @@ tr {
   padding: 0;
 }
 
+.TechSkills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+
+
+.TechSkills h3 {
+  margin-top: 0;
+}
+
 .icons {
   display: block;
   margin-left: auto;
