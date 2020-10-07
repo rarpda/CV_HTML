@@ -1,44 +1,44 @@
+/*Variables*/
+:root {
+  --global-sides-margin: 15%;
+}
+
+
+/*Component selectors*/
 body {
   background-color: #52514f;
   margin: 0;
   color: white;
-  font-family: "Bitter";
+  font-family: "Bitter", sans-serif;
+  font-size: calc(0.05rem + 1vw);
 }
 
-h1 {
-  font-family: "Merriweather";
-  font-size: 4.625rem;
-  margin: 50px auto 0 auto;
+h1, h2, h3, h4 {
   text-align: center;
+  font-family: "Merriweather";
 }
 
 h2 {
-  font-family: "Merriweather";
-  font-weight: normal;
-  padding-bottom: 10px;
-  font-size: 3.625rem;
-  text-align: center;
-  margin-bottom: 0;
+  font-size: calc(2rem + 1vw);
 }
 
 h3 {
-  font-family: "Merriweather";
-  text-align: center;
-  font-size: 1.625rem;
+  font-size: calc(1.5rem + 1vw);
+}
+
+h4 {
+  font-size: calc(1rem + 1vw);
 }
 
 p {
   line-height: 1;
-  margin: auto 10%;
 }
 
 hr {
-  height: 5;
-  margin-top:0;
-  margin-bottom: 0;
-  background-color: black;
-  border-color: black;
-  width: 100%;
+  height: 3px;
+  margin: 0;
+  border: 0;
+  background-color: grey;
 }
 
 a {
@@ -55,19 +55,11 @@ table {
   width: 100%;
   padding-left: 10%;
   padding-right: 10%;
+  table-layout: fixed;
 }
 
 li {
   line-height: 1.5;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.date {
-  text-align: right;
-  width: 40%;
 }
 
 tr {
@@ -75,38 +67,41 @@ tr {
   border-width: thick;
 }
 
-.links {
+/* Class selectors*/
+.date {
+  text-align: right;
+  width: 40%;
+}
+
+.links, .TechSkills, .title {
   text-align: center;
+}
+
+.TechSkills ul {
+  padding: 0;
 }
 
 .TechSkills {
-  display: block;
-  margin-left: 22%;
-  margin-right: 22%;
+  display: grid;
+  margin: 0 var(--global-sides-margin);
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 100px;
 }
 
-.title
-{
-  text-align: center;
-}
 
 .icons {
-  align-items: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 7%;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  max-width: 10%;
+  width: 100%;
+  height: auto;
+  padding: 2%;
 }
 
 .summary {
   text-align: left;
-}
-
-.profile
-{
-  margin-bottom: 3%;
 }
 
 .cover img {
@@ -115,23 +110,7 @@ tr {
   display: inline;
 }
 
-
-nav {
-  text-align: right;
-  height: 50px;
-  font-size: 18px;
-  background-color: #222831;
-  color: white;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-
-
-
-
 .otherSkills {
-  margin-left: 3%;
   text-align: center;
   line-height: 1.2;
   font-family: "Roboto";
@@ -142,45 +121,20 @@ nav {
 }
 
 .photo {
-  width: 12%;
   border-radius: 100%;
   display: block;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 1%;
-  margin-bottom: 1%;
-}
+  margin: 1% auto 1% auto;;
 
-.section {
-  height: 25%;
+  max-width: 20%;
 }
 
 .profile p {
   text-align: center;
-  margin-left: 20%;
-  margin-right: 20%;
   line-height: 1.2;
 }
 
-
-.otherSkills {
-  margin-bottom: 10%;
-}
-
 .cover h3 {
-  font-size: 30px;
-}
-
-.footer {
-  margin-top: 0;
-  padding: 10px 10px 10px 10px;
-  background-color: black;
-  text-align: center;
-}
-
-.footer p{
-  font-size: 12px;
-  line-height: 1.1;
+  font-size: 5vw;
 }
 
 .profile {
@@ -203,21 +157,67 @@ nav {
   background-color: #30475e;
 }
 
-.section {
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-bottom: 2%;
-  padding-top: 2%;
-}
+/* 1536 */
 
-.cover h2 {
-  margin-top: 10%;
+.section {
+  height: 25%;
+  padding: 1% 0 3% 0;
+  margin: 0;
 }
 
 .cover.section {
-  height: 700px;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 600px;
   background-image: url("../milkyWay1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.section.cover h2 {
+  font-size: calc(1.5rem + 2vw);
+}
+
+.companyLogos {
+  /* height: 100px; */
+  max-width: 10%;
+}
+
+.company.icons {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  max-height:100%;
+  background-color: white;
+}
+
+.workGrid {
+  margin: 2% 20%;
+  margin: 2% var(--global-sides-margin);
+  display: grid;
+  grid-template-columns: 15% auto;
+  grid-column-gap: 20px;
+}
+
+.logoSection {
+  grid-row: 1 / 3;
+}
+
+.titleWork {
+  grid-column: 2;
+}
+
+.titleWork p {
+  text-align: left;
+  margin: 0;
+}
+
+.section.work h3 {
+  margin: 0;
+}
+
+
+.introText {
+  margin: 0 var(--global-sides-margin);
 }

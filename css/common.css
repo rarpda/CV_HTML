@@ -1,0 +1,40 @@
+nav {
+  text-align: right;
+  font-size: 1vw;
+  background-color: #222831;
+  color: white;
+  height: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  font-size: calc(0.1rem + 1vw);
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+footer {
+  margin-top: 0;
+  padding: 10px 10px 10px 10px;
+  background-color: black;
+  text-align: center;
+}
+
+footer p {
+  line-height: 1.1;
+  font-size: calc(0.4rem + 0.5vw);
+}
+
+html {
+  scroll-behavior: smooth;
+}

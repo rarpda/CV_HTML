@@ -5,44 +5,45 @@
   <meta charset="utf-8" />
   <title>Ricardo Araujo</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/projects.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
 </head>
 <body>
-
   <nav>
-    <strong>
       <a href="index.html">Home</a>
-      <!-- <a href="projects.html">Projects</a> -->
-      <a href="mailto:fakeemail@gmail.com">Contact me!</a>
-      <!-- <a href="resources/cv.pdf" Download>Download my CV!</a> -->
-    </strong>
+      <ul>
+        <li><a href="mailto:fakeemail@gmail.com">Contact me!</a></li>
+      </ul>
   </nav>
 
+
   <div class="section cover">
-    <h2><a href=#introduction>Hello there!<br /> Let me introduce myself</a></h2>
+    <h2><a href=#introduction>Hello there!<br /> Let me introduce myself,</a></h2>
   </div>
-
-
   <hr>
+
   <div class="section profile" id="introduction">
-    <h2>Introduction</h2>
-    <h3><strong>Ricardo Araujo</strong></h3>
+    <h3>I am Ricardo Araujo!</h3>
     <img class="photo" src="linkedin.jpg" alt="Photo of Ricardo Araujo">
-    <p>
-      <b>Cyber Consultant</b><br>
-      <b>Deloitte Risk Advisory</b><br>
-      <em>Edinburgh, Scotland</em><br />
-    </p><br><br>
-    <p>
-      I have a multidisciplinary background and I'm always looking for new challenges and experiences! I enjoy being out of my comfort zone because this is how I grow professionally and most importantly personally.
-      My interests lie in software development and more recently in application and cloud security. I aim to strenghten my skills and understand how to build applications that are secure and robust.
-    </p>
-    <br>
-    <p>
-      <strong><a href="https://github.com/rarpda">Github</a> | <a href="https://www.linkedin.com/in/ricardo-araujo-908885108/">LinkedIn</a> </strong>
-    </p>
+    <div class="introText">
+      <p>
+        <b>Cyber Consultant</b><br>
+        <b>Deloitte Risk Advisory</b><br>
+        <em>Edinburgh, Scotland</em><br />
+      </p><br><br>
+      <p>
+        I have a multidisciplinary background and I'm always looking for new challenges and experiences! I enjoy being out of my comfort zone because this is how I grow professionally and most importantly personally.
+        My interests lie in software development and more recently in application and cloud security. I aim to strenghten my skills and understand how to build applications that are secure and robust.
+      </p>
+      <br>
+      <p>
+        <strong><a href="https://github.com/rarpda">Github</a> | <a href="https://www.linkedin.com/in/ricardo-araujo-908885108/">LinkedIn</a> </strong>
+      </p>
+    </div>
   </div>
   <hr>
 
@@ -51,14 +52,36 @@
     <h3>Technical Skills</h3>
     <div>
       <div class="TechSkills">
-        <ul>
-          <li>Java – Projects on distributed systems (Java RMI), server deployment, GUI development (Java FX)</li>
-          <li>Python – Machine learning based projects using sklearn, pandas and numpy (among others)</li>
-          <li>JavasScript/Node.js/Express.js/CouchDB – University dissertation built on this stack </li>
-          <li>Gradle, Selenium, TravisCI – Used in setting up University projects </li>
-          <li>Amazon Web Services (AWS)/Terraform</li>
-          <li>Java Spring/Docker – Hobby projects</li>
-        </ul>
+        <div>
+          <img class="logos" src="Images\logos\java.png"/>
+          <h4>Java</h4>
+          <p>Projects on distributed systems (Java RMI), server deployment, GUI development (Java FX)</p>
+        </div>
+        <div>
+          <img class="logos" src="Images\logos\python.png"/>
+          <h4>Python</h4>
+          <p>Machine learning based projects using sklearn, pandas and numpy (among others)</p>
+        </div>
+        <div>
+          <img class="logos" src="Images\logos\js.png"/>
+          <h4>JavaScript</h4>
+          <p>Frameworks: Node.js + Express.js - University dissertation project with couchDB database</p>
+        </div>
+        <div>
+          <img class="logos" src="Images\logos\gradle.png"/>
+          <h4>CI tools</h4>
+          <p>Gradle, Selenium, TravisCI -Used in setting up University projects</p>
+        </div>
+        <div>
+          <img class="logos" src="Images\logos\aws.png"/>
+          <h4>AWS + Terraform</h4>
+          <p>Security Architecture reviews on AWS</p>
+        </div>
+        <div>
+          <img class="logos" src="Images\logos\docker.png"/>
+          <h4>Docker</h4>
+          <p>Hobby projects</p>
+        </div>
       </div>
     </div>
   </div>
@@ -67,82 +90,60 @@
   <div class="section work">
     <img class="icons" src="work.png" alt="work experience icon">
     <h3>Work Experience</h3>
-    <div>
-      <table>
-        <thead>
-        </thead>
-        <tbody>
-          <tr>
-          <tr>
-            <td>
+      <div class="workGrid">
+          <div class="logoSection">
+            <img class="company icons" src="Images/logos/Deloitte.png" alt="Deloitte icon">
+          </div>
+          <div class="titleWork">
               <b>Cyber Consultant</b>
-            </td>
-            <td class="date">
+              <p>Deloitte Risk Advisory, Edinburgh</p>
               <em>September 2019 - Present</em>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <em>Deloitte Risk Advisory, Edinburgh </em>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <ul>
-                <li>Supported Large Enterprise Recovery Programme at an Oil and Gas company. Roles in: Enterprise Applications Architecture, CyberArk (PAM) implementation and Project Management</li>
-                <li>Client facing position, interacting with multiple stakeholders</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-          <tr>
-            <td>
+          </div>
+          <div class="workDescription">
+            <ul>
+              <li>Supported Large Enterprise Recovery Programme at an Oil and Gas company. Roles in: Enterprise Applications Architecture, CyberArk (PAM) implementation and Project Management</li>
+              <li>Client facing position, interacting with multiple stakeholders</li>
+            </ul>
+          </div>
+      </div>
+
+      <div class="workGrid">
+          <div class="logoSection">
+            <img class="company icons" src="Images/logos/zethon.jpg" alt="Zethon icon">
+          </div>
+          <div class="titleWork">
               <b>Junior Software Developer</b>
-            </td>
-            <td class="date">
+              <p>Zethon Medical, Aston Clinton</p>
               <em>August 2016 - August 2018</em>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <em>Zethon Medical, Aston Clinton</em>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <ul>
-                <li>Developed C# application for use in the production line (for assembly and QA)</li>
-                <li>Developed MISRA compliant C software (TI framework) following TDD methodology for use in motor control applications - worked with I2C, SPI, Serial and wireless (MiWi) protocols</li>
-                <li>Co-lead R&D into a smart attachment recognition mechanism</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-          <tr>
-            <td>
+          </div>
+          <div class="workDescription">
+            <ul>
+              <li>Developed C# application for use in the production line (for assembly and QA)</li>
+              <li>Developed MISRA compliant C software (TI framework) following TDD methodology for use in motor control applications - worked with I2C, SPI, Serial and wireless (MiWi) protocols</li>
+              <li>Co-lead R&D into a smart attachment recognition mechanism</li>
+            </ul>
+          </div>
+      </div>
+
+
+      <div class="workGrid">
+          <div class="logoSection">
+            <img class="company icons" src="Images/logos/zethon.jpg" alt="Zethon icon">
+          </div>
+          <div class="titleWork">
               <b>Trainee Engineer</b>
-            </td>
-            <td class="date">
+              <p>Zethon Medical, Aston Clinton</p>
               <em>July 2014 - September 2015</em>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <em>Zethon Medical, Aston Clinton</em>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <ul>
-                <li>Designed 3D printed tooling and footpedal using SolidWorks</li>
-                <li>Support life and leak testing for a high-speed orthopaedic tool</li>
-                <li>Developed Bluetooth based application in Java for Android (unreleased)</li>
-              </ul>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+          </div>
+          <div class="workDescription">
+            <ul>
+              <li>Designed 3D printed tooling and footpedal using SolidWorks</li>
+              <li>Support life and leak testing for a high-speed orthopaedic tool</li>
+              <li>Developed Bluetooth based application in Java for Android (unreleased)</li>
+            </ul>
+          </div>
+      </div>
+
   </div>
 
   <hr>
@@ -150,76 +151,59 @@
     <img class="icons" src="school.png" alt="education icon">
 
     <h3>Education</h3>
-    <table>
-      <thead>
-      </thead>
-      <tbody>
-        <tr>
-        <tr>
-          <td>
+    <div class="workGrid">
+        <div class="logoSection">
+          <img class="company icons" src="Images/logos/st andrews.png" alt="Zethon icon">
+        </div>
+        <div class="titleWork">
             <b>MSc Advanced Computer Science – Distinction</b>
-          </td>
-          <td class="date">
+            <p>The University of St Andrews, UK</p>
             <em>September 2018 - September 2019</em>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <em>The University of St Andrews, UK</em>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <ul>
-              <li>Thesis: Re-engineering the project allocation tool</li>
-              <li>Modules: Distributed Systems, Machine Learning, Critical Systems Engineering, Software Engineering</li>
-              <li>Achievements: Awarded Deans List, Elected Postgraduate student representative for inclusion and diversity</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-        <tr>
-          <td>
+        </div>
+        <div class="workDescription">
+          <ul>
+            <li>Thesis: Re-engineering the project allocation tool</li>
+            <li>Modules: Distributed Systems, Machine Learning, Critical Systems Engineering, Software Engineering</li>
+            <li>Achievements: Awarded Deans List, Elected Postgraduate student representative for inclusion and diversity</li>
+          </ul>
+        </div>
+    </div>
+
+
+    <div class="workGrid">
+        <div class="logoSection">
+          <img class="company icons" src="Images\logos\sheffield university.png" alt="Zethon icon">
+        </div>
+        <div class="titleWork">
             <b>BEng Bioengineering with a Year in Industry – First Class</b>
-          </td>
-          <td class="date">
+            <p>The University of Sheffield, UK</p>
             <em>September 2012 - June 2016</em>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <em>The University of Sheffield, UK</em>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <ul>
-              <li>Thesis: Developing a Novel QA method for pulse oximetry</li>
-              <li>Modules: Control System Analysis for Continuous and Discrete System, Intelligent Systems, Digital Signal Processing</li>
-              <li>Achievements: Hub winner team - Engineering You’re Hired, German A1 certificate, Aikido University Team Champions</li>
-            </ul>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+        </div>
+        <div class="workDescription">
+          <ul>
+            <li>Thesis: Developing a Novel QA method for pulse oximetry</li>
+            <li>Modules: Control System Analysis for Continuous and Discrete System, Intelligent Systems, Digital Signal Processing</li>
+            <li>Achievements: Hub winner team - Engineering You’re Hired, German A1 certificate, Aikido University Team Champions</li>
+          </ul>
+        </div>
+    </div>
   </div>
   <hr>
+
   <div class="section otherSkills">
     <img class="icons" src="improvement.png" alt="">
     <h3>Other skills</h3>
-    <p class="otherSkills" n>
+    <p class="otherSkills">
       <b> Certifications: </b> AWS Certified Developer/Solutions Architect, CyberArk Trustee, Oracle Infrastructure Cloud Foundation<br>
       <b> Languages: </b> Portuguese (Native), English (Fluent)<br>
       <b> Software: </b> Microsoft Office stack, Tableau
     </p>
   </div>
 
-  <footer class="footer">
-    <p>Icons removed from: </p>
-    <p>A fun project to refresh on web dev. </p>
+  <footer>
+    <p>Icons removed from wikipedia, aws, freeicons, flaticon among others.</p>
+    <p>A fun project to refresh on HTML and CSS-</p>
   </footer>
-
-
 </body>
 
 </html>
